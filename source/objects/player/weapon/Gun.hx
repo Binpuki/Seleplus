@@ -46,7 +46,6 @@ class Gun extends FlxSprite
 class Bullet extends FlxSprite
 {
     public var damage:Float = 5;
-    public var direction:Float = 0; // in radians
     public var speed:Float = 5;
 
     public var originalCalc:FlxPoint;
