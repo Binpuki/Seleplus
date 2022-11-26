@@ -29,6 +29,8 @@ class PlayState extends BasePlayState
         player = new Player();
         add(player);
 
+        FlxG.camera.follow(player);
+
         controlScheme.addPressEvent(player.onKeyDown);
         controlScheme.addReleaseEvent(player.onKeyRelease);
     }

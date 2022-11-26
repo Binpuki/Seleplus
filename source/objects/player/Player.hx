@@ -12,7 +12,8 @@ class Player extends FlxTypedSpriteGroup<FlxSprite>
 {
     public var player(default, null):PlayerSprite;
 
-    private var speed = 0;
+    public var speed:Float = 0;
+    public var maxSpeed:Float = 10;
 
     public var mappings:ControlMapping;
 
@@ -32,24 +33,31 @@ class Player extends FlxTypedSpriteGroup<FlxSprite>
     {
         mappings.process(key, modifier, true);
 
-        if (mappings.pressed["RIGHT"])
-            speed = 10;
-
-        if (mappings.pressed["LEFT"])
-            speed = -10;
+        //if (mappings.pressed["LEFT"] || mappings.pressed["RIGHT"])
+        //    speed += 0.4 * (speedM);
     }
 
     public function onKeyRelease(key:KeyCode, modifier:KeyModifier)
     {
         mappings.process(key, modifier, false);
 
-        if (!(mappings.pressed["RIGHT"] || mappings.pressed["LEFT"]))
-            speed = 0;
+        //if (!(mappings.pressed["RIGHT"] || mappings.pressed["LEFT"]))
+        //    speed = 0;
     }
 
     override function update(elapsed:Float)
     {
         super.update(elapsed);
+
+        if (mappings.pressed["LEFT"] || mappings.pressed["RIGHT"])
+        {
+            var horizMultiplier:Float = (mappings.pressed["LEFT"] ? -1 : mappings.pressed["RIGHT"] ? 1 : 0);
+
+            if (speed >= -maxSpeed && speed <= maxSpeed)
+                speed += 0.4 * horizMultiplier;
+            else
+                speed = (maxSpeed * horizMultiplier);
+        }
 
         x += speed;
     }
