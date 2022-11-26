@@ -1,5 +1,6 @@
 package;
 
+import states.ingame.PlayState;
 import flixel.FlxGame;
 import openfl.display.Sprite;
 
