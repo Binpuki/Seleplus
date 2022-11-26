@@ -2,22 +2,23 @@ package states;
 
 import controls.ControlScheme;
 import flixel.FlxState;
+import flixel.addons.ui.FlxUIState;
 
-class BaseState extends FlxState
+class BaseState extends FlxUIState
 {
-    private var controlScheme:ControlScheme;
+	private var controlScheme:ControlScheme;
 
-    public function new()
-    {
-        super();
+	public function new()
+	{
+		super();
 
-        controlScheme = new ControlScheme();
-    }
+		controlScheme = new ControlScheme();
+	}
 
-    override function destroy()
-    {
-        super.destroy();
+	override function destroy()
+	{
+		super.destroy();
 
-        controlScheme.destroy();
-    }
+		controlScheme.destroy();
+	}
 }

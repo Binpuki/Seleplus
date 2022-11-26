@@ -1,34 +1,33 @@
 package controls;
 
-import lime.ui.KeyModifier;
-import lime.ui.KeyCode;
 import flixel.input.keyboard.FlxKey;
+import lime.ui.KeyCode;
+import lime.ui.KeyModifier;
 
 class ControlMapping
 {
-    public var pressed(default, null):Map<String, Bool> = [];
-    private var controlMappings(default, null):Map<String, FlxKey> = [];
+	public var pressed(default, null):Map<String, Bool> = [];
 
-    public function new() { };
+	private var controlMappings(default, null):Map<String, FlxKey> = [];
 
-    public function addMapping(name:String, key:FlxKey)
-    {
-        controlMappings.set(name, key);
-    }
+	public function new() {};
 
-    public function removeMapping(name:String)
-    {
-        controlMappings.remove(name);
-    }
+	public function addMapping(name:String, key:FlxKey)
+	{
+		controlMappings.set(name, key);
+	}
 
-    public function process(key:KeyCode, modifier:KeyModifier, pressed:Bool)
-    {
-        var flixelKey:FlxKey = Converter.fromKeyCodeToFlxKey(key, modifier);
+	public function removeMapping(name:String)
+	{
+		controlMappings.remove(name);
+	}
 
-        for (action in controlMappings.keys())
-            if (controlMappings[action] == flixelKey)
-                this.pressed.set(action, pressed);
-            else if (pressed)
-                this.pressed.set(action, !pressed);
-    }
+	public function process(key:KeyCode, modifier:KeyModifier, pressed:Bool)
+	{
+		var flixelKey:FlxKey = Converter.fromKeyCodeToFlxKey(key, modifier);
+
+		for (action in controlMappings.keys())
+			if (controlMappings[action] == flixelKey)
+				this.pressed.set(action, pressed);
+	}
 }

@@ -1,42 +1,56 @@
 package states.ingame;
 
-import flixel.util.FlxColor;
-import flixel.FlxSprite;
-import objects.player.Player;
-import flixel.FlxG;
 import flixel.FlxCamera;
+import flixel.FlxG;
+import flixel.FlxSprite;
+import flixel.text.FlxText;
+import flixel.util.FlxColor;
+import objects.player.Player;
 import objects.player.weapon.Gun;
 
 class PlayState extends BasePlayState
 {
-    public var player:Player;
+	public var player:Player;
 
-    // FIRYDY NIGHT FUNKNBN
-    public var camHUD:FlxCamera;
+	// FIRYDY NIGHT FUNKNBN
+	public var camHUD:FlxCamera;
 
-    public override function create()
-    {
-        super.create();
+	var testTxt:FlxText;
 
-        FlxCamera.defaultCameras = [FlxG.camera];
+	public override function create()
+	{
+		super.create();
 
-        camHUD = new FlxCamera();
-        camHUD.bgColor.alpha = 0;
-        FlxG.cameras.add(camHUD);
+		FlxCamera.defaultCameras = [FlxG.camera];
 
-        //var gun = new Gun();
-        //add(gun);
-        //gun.screenCenter();
+		camHUD = new FlxCamera();
+		camHUD.bgColor.alpha = 0;
+		FlxG.cameras.add(camHUD);
 
-        // giant thing
-        add(new FlxSprite(-300, -300).makeGraphic(600, 600, FlxColor.PINK));
+		// var gun = new Gun();
+		// add(gun);
+		// gun.screenCenter();
 
-        player = new Player();
-        add(player);
+		// giant thing
+		add(new FlxSprite(-300, -300).makeGraphic(600, 600, FlxColor.PINK));
 
-        FlxG.camera.follow(player);
+		testTxt = new FlxText(10, 10, 0, "", 16);
+		testTxt.cameras = [camHUD];
+		add(testTxt);
 
-        controlScheme.addPressEvent(player.onKeyDown);
-        controlScheme.addReleaseEvent(player.onKeyRelease);
-    }
+		player = new Player();
+		add(player);
+
+		FlxG.camera.follow(player);
+
+		controlScheme.addPressEvent(player.onKeyDown);
+		controlScheme.addReleaseEvent(player.onKeyRelease);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+
+		testTxt.text = Std.string(player.speed);
+	}
 }
