@@ -1,6 +1,6 @@
 package states.ingame;
 
-import objects.player.Gun;
+import objects.player.weapon.Gun;
 
 class PlayState extends BasePlayState
 {
