@@ -1,5 +1,7 @@
 package states.ingame;
 
+import flixel.util.FlxColor;
+import flixel.FlxSprite;
 import objects.player.Player;
 import flixel.FlxG;
 import flixel.FlxCamera;
@@ -25,6 +27,9 @@ class PlayState extends BasePlayState
         //var gun = new Gun();
         //add(gun);
         //gun.screenCenter();
+
+        // giant thing
+        add(new FlxSprite(-300, -300).makeGraphic(600, 600, FlxColor.PINK));
 
         player = new Player();
         add(player);

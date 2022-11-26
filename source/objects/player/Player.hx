@@ -1,5 +1,6 @@
 package objects.player;
 
+import flixel.math.FlxMath;
 import controls.ControlMapping;
 import controls.Converter;
 import flixel.input.keyboard.FlxKey;
@@ -57,6 +58,10 @@ class Player extends FlxTypedSpriteGroup<FlxSprite>
                 speed += 0.4 * horizMultiplier;
             else
                 speed = (maxSpeed * horizMultiplier);
+        }
+        else 
+        {
+            speed = FlxMath.lerp(speed, 0, 0.1);
         }
 
         x += speed;
