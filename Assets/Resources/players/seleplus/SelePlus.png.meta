@@ -1,0 +1,651 @@
+fileFormatVersion: 2
+guid: 5bf9692bad9c86249948355bdc9e70a9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SelePlus Jump0000
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1751
+        width: 287
+        height: 296
+      alignment: 9
+      pivot: {x: 0.41289198, y: -0.054054055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96c49c51f5d9ea80800000000000000
+      internalID: -8436977194284824934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1277
+        width: 297
+        height: 422
+      alignment: 9
+      pivot: {x: 0.3181818, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d50ddb81e4d4240800000000000000
+      internalID: 4777560647880695150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0003
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1278
+        width: 312
+        height: 421
+      alignment: 9
+      pivot: {x: 0.30288458, y: -0.016627079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b939b86a0ed976be0800000000000000
+      internalID: -1484043964002888805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0005
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1345
+        width: 300
+        height: 354
+      alignment: 9
+      pivot: {x: 0.32500002, y: -0.18926553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc25f5db8b56d3e20800000000000000
+      internalID: 3331931143449563853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0007
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1368
+        width: 273
+        height: 331
+      alignment: 9
+      pivot: {x: 0.45604396, y: -0.244713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f60ef4dcb3ae9960800000000000000
+      internalID: 7610700451725313781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0009
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 1365
+        width: 284
+        height: 334
+      alignment: 9
+      pivot: {x: 0.4841549, y: -0.22155689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661b7a71802b2e280800000000000000
+      internalID: -9015447756215963290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0011
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1369
+        width: 268
+        height: 330
+      alignment: 9
+      pivot: {x: 0.5503732, y: -0.22424242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1e1124278a67b80800000000000000
+      internalID: -8397339246497504832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0013
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1334
+        width: 267
+        height: 365
+      alignment: 9
+      pivot: {x: 0.5898877, y: -0.20273973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ef8c5340bad4020800000000000000
+      internalID: 2327704616990998148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0015
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 964
+        width: 269
+        height: 312
+      alignment: 9
+      pivot: {x: 0.563197, y: -0.29166666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03a8b8abec97bea0800000000000000
+      internalID: -5857040254410120434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Jump0016
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 951
+        width: 283
+        height: 325
+      alignment: 9
+      pivot: {x: 0.46466434, y: -0.20923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700380c77fb5a34e0800000000000000
+      internalID: -2001185965916803065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Run0000
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 954
+        width: 324
+        height: 322
+      alignment: 9
+      pivot: {x: 0.4243827, y: -0.07453416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5504eacb6f1067e0800000000000000
+      internalID: -1774383705358072481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Run0001
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 946
+        width: 295
+        height: 330
+      alignment: 9
+      pivot: {x: 0.40169492, y: -0.042424243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cba48be3bd36e140800000000000000
+      internalID: 4748550700068547526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Run0002
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 940
+        width: 285
+        height: 336
+      alignment: 9
+      pivot: {x: 0.41929823, y: -0.011904762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698ec2125d71f2360800000000000000
+      internalID: 7146957337812330646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Run0003
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 953
+        width: 283
+        height: 323
+      alignment: 9
+      pivot: {x: 0.43992934, y: -0.009287925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87142d507770837c0800000000000000
+      internalID: -4091512053685927560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Run0005
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 941
+        width: 292
+        height: 335
+      alignment: 9
+      pivot: {x: 0.39212328, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae717e679608c3f20800000000000000
+      internalID: 3403736608840030186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Run0006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 601
+        width: 305
+        height: 338
+      alignment: 9
+      pivot: {x: 0.352459, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc05d217c12ac270800000000000000
+      internalID: 8271460804517498035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Idle0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1701
+        width: 271
+        height: 346
+      alignment: 9
+      pivot: {x: 0.3523985, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570c051aa6830abe0800000000000000
+      internalID: -1468111447898668939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Idle0002
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1703
+        width: 271
+        height: 344
+      alignment: 9
+      pivot: {x: 0.3523985, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f382c32fd7d4210800000000000000
+      internalID: 1318848745234251564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Idle0004
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1705
+        width: 271
+        height: 342
+      alignment: 9
+      pivot: {x: 0.3523985, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea1e7c0b5e03c690800000000000000
+      internalID: -7583201563347379487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Idle0006
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 1706
+        width: 271
+        height: 341
+      alignment: 9
+      pivot: {x: 0.3523985, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a5cad925501afa0800000000000000
+      internalID: -5791341793430971748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Idle0008
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 1702
+        width: 271
+        height: 345
+      alignment: 9
+      pivot: {x: 0.3523985, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0300a27d7a7f1d830800000000000000
+      internalID: 4094325836497944624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlus Idle0010
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1700
+        width: 271
+        height: 347
+      alignment: 9
+      pivot: {x: 0.3523985, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4b0dc6cc778edd0800000000000000
+      internalID: -2456581876847954728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlusHit0000
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 545
+        width: 405
+        height: 394
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23619b7a308e742e0800000000000000
+      internalID: -2141487995394910670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelePlusHit0002
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 545
+        width: 405
+        height: 394
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77134174456ca8a90800000000000000
+      internalID: -7310812979810520713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SelePlus Run0001: 4748550700068547526
+      SelePlus Jump0007: 7610700451725313781
+      SelePlus Jump0000: -8436977194284824934
+      SelePlus Jump0011: -8397339246497504832
+      SelePlus Idle0010: -2456581876847954728
+      SelePlus Jump0003: -1484043964002888805
+      SelePlusHit0000: -2141487995394910670
+      SelePlus Idle0008: 4094325836497944624
+      SelePlusHit0002: -7310812979810520713
+      SelePlus Run0005: 3403736608840030186
+      SelePlus Jump0001: 4777560647880695150
+      SelePlus Jump0013: 2327704616990998148
+      SelePlus Jump0015: -5857040254410120434
+      SelePlus Idle0004: -7583201563347379487
+      SelePlus Jump0005: 3331931143449563853
+      SelePlus Run0002: 7146957337812330646
+      SelePlus Run0003: -4091512053685927560
+      SelePlus Jump0009: -9015447756215963290
+      SelePlus Idle0006: -5791341793430971748
+      SelePlus Run0006: 8271460804517498035
+      SelePlus Jump0016: -2001185965916803065
+      SelePlus Run0000: -1774383705358072481
+      SelePlus Idle0000: -1468111447898668939
+      SelePlus Idle0002: 1318848745234251564
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
