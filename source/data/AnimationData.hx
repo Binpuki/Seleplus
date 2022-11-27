@@ -10,8 +10,8 @@ import obsydia.Sprite;
 
 class AnimationData
 {
-	public var atlas:Array<String>;
-	public var atlasType:Array<AtlasType>;
+	public var atlas:Array<String> = [];
+	public var atlasType:Array<AtlasType> = [];
 
 	public var scale:Float = 1;
 
