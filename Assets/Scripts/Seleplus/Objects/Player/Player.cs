@@ -10,6 +10,8 @@ namespace Seleplus.Objects.Player
     {
         bool isGrounded = false;
 
+        [Header("Utilities")]
+
         [Header("Movement")]
         public float increaseSpeed = 0.4f;
         public float decreaseSpeed = 0.05f;
@@ -81,6 +83,8 @@ namespace Seleplus.Objects.Player
                 spriteAnimator.Play("idle", 0);
                 spriteAnimator.speed = 1f;
             }
+
+
         }
 
         void FixedUpdate()

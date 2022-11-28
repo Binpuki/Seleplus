@@ -105,27 +105,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gun0000
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 404
-        width: 154
-        height: 107
-      alignment: 9
-      pivot: {x: 0.79220784, y: 0.23364486}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbfd5b564cbf43eb0800000000000000
-      internalID: -4740887686775709765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Gun Shoot0000
       rect:
         serializedVersion: 2
@@ -134,7 +113,7 @@ TextureImporter:
         width: 229
         height: 116
       alignment: 9
-      pivot: {x: 0.37991267, y: -0.15517241}
+      pivot: {x: 0.860262, y: 0.23275861}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,7 +134,7 @@ TextureImporter:
         width: 253
         height: 118
       alignment: 9
-      pivot: {x: 0.4387352, y: -0.15254237}
+      pivot: {x: 0.8735178, y: 0.22881359}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,7 +155,7 @@ TextureImporter:
         width: 294
         height: 175
       alignment: 9
-      pivot: {x: 0.5340136, y: -0}
+      pivot: {x: 0.90816325, y: 0.25714287}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,7 +176,7 @@ TextureImporter:
         width: 278
         height: 182
       alignment: 9
-      pivot: {x: 0.5071942, y: -0}
+      pivot: {x: 0.9028777, y: 0.24725276}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,7 +197,7 @@ TextureImporter:
         width: 106
         height: 151
       alignment: 9
-      pivot: {x: -0.4811321, y: -0.07284768}
+      pivot: {x: 0.5566037, y: 0.22516558}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,7 +218,7 @@ TextureImporter:
         width: 158
         height: 107
       alignment: 9
-      pivot: {x: 0.11392405, y: -0.1588785}
+      pivot: {x: 0.8101266, y: 0.26168224}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,7 +239,7 @@ TextureImporter:
         width: 160
         height: 106
       alignment: 9
-      pivot: {x: 0.125, y: -0.17924528}
+      pivot: {x: 0.8125, y: 0.24528301}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,6 +247,27 @@ TextureImporter:
       bones: []
       spriteID: 9a381b50d6e176330800000000000000
       internalID: 3703962672131310505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gun0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 404
+        width: 154
+        height: 107
+      alignment: 9
+      pivot: {x: 0.79220784, y: 0.23364486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfd5b564cbf43eb0800000000000000
+      internalID: -4740887686775709765
       vertices: []
       indices: 
       edges: []

@@ -9,8 +9,9 @@ using Seleplus.Scripts;
 
 namespace Seleplus.Objects.Weapons
 {
-    public class RangedWeapon : MonoBehaviour
+    public class RangedWeapon : Weapon
     {
+        public Animator animator;
         public SpriteRenderer spriteRenderer;
         public Transform gunBarrel;
         private MouseTracker mouseTracker;
@@ -19,23 +20,27 @@ namespace Seleplus.Objects.Weapons
         public float radius = 1f;
 
         public bool flipX;
+
+        public float angle;
+        public float angleDegrees;
         private void Start()
         {
             mouseTracker = FindObjectOfType<MouseTracker>();
             flipX = spriteRenderer.flipX;
         }
 
-        private void Update()
+        protected override void Update()
         {
+            base.Update();
+
             // I KNOW THIS IS BAD BUT IT WORKS FOR NOW, I WILL REWORK LATER ;-;
             Vector2 mouseCalc = new Vector2(mouseTracker.worldPosition.x - gunBarrel.position.x, mouseTracker.worldPosition.y - gunBarrel.position.y);
 
-            float angle = (Mathf.Atan2(mouseCalc.y, mouseCalc.x));
-            float angleDegrees = angle * (180f / Mathf.PI);
+            angle = (Mathf.Atan2(mouseCalc.y, mouseCalc.x));
+            angleDegrees = angle * (180f / Mathf.PI);
             transform.position = new Vector3(center.position.x + (radius * Mathf.Cos(angle)), center.position.y + (radius * Mathf.Sin(angle)), center.position.z);
 
             Quaternion rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, angleDegrees);
-            Debug.Log(rotation.z);
             bool reached90 = (rotation.eulerAngles.z > 90f && rotation.eulerAngles.z < 270f);
             spriteRenderer.flipX = (!flipX ? reached90 : !reached90);
 
@@ -43,6 +48,23 @@ namespace Seleplus.Objects.Weapons
                 rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, angleDegrees - 180);
 
             transform.rotation = rotation;
+        }
+
+        public override void OnAttack(string action)
+        {
+            switch (action)
+            {
+                case "Attack":
+                    {
+                        Shoot();
+                        break;
+                    }
+            }
+        }
+
+        public virtual void Shoot()
+        {
+            animator.Play("shoot", 0, 0f);
         }
     }
 }

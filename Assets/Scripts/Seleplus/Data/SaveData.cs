@@ -11,5 +11,7 @@ namespace Seleplus.Data
         public static SaveData Data = new SaveData();
 
         public string[] Keybinds = { "<Keyboard>/a", "<Keyboard>/d", "<Keyboard>/space" };
+        public string[] WeaponBinds = { "<Mouse>/leftButton" };
+
     }
 }

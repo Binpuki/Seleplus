@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 15205524}
   - component: {fileID: 15205525}
   - component: {fileID: 15205528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,10 +371,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 357620088}
-  - component: {fileID: 357620089}
   - component: {fileID: 357620090}
-  m_Layer: 0
-  m_Name: GameObject
+  - component: {fileID: 357620091}
+  - component: {fileID: 357620092}
+  m_Layer: 9
+  m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,23 +397,6 @@ Transform:
   m_Father: {fileID: 15205522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &357620089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357620087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cebcacae7e4431b47ad1935fbdf2e60d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 357620090}
-  gunBarrel: {fileID: 360158158}
-  center: {fileID: 509190263}
-  radius: 1
-  flipX: 0
 --- !u!212 &357620090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -451,8 +435,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1894703039
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4740887686775709765, guid: 3443ce5ece49bd043aca91b8195ac68a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -465,6 +449,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &357620091
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357620087}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abbe636f27cfc54458b1e0ff3e0c33d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &357620092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357620087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491c1c60edfd10e4daaf590a90e57e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputs: []
+  Damage: 0.3
+  Speed: 0.041666668
+  animator: {fileID: 357620091}
+  spriteRenderer: {fileID: 357620090}
+  gunBarrel: {fileID: 360158158}
+  center: {fileID: 509190263}
+  radius: 1.5
+  flipX: 0
+  angle: 0
+  angleDegrees: 0
+  Bullet: {fileID: 1582235193968569800, guid: 0b1c5d20c4ab21246bddf93231a0e594, type: 3}
 --- !u!1 &360158157
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 360158158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 509190263}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1746824895}
   - component: {fileID: 1746824896}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1085,7 +1113,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945098734}
-  m_LocalRotation: {x: 0, y: 0, z: 0.61566144, w: 0.7880108}
+  m_LocalRotation: {x: -0, y: -0, z: 0.61566144, w: 0.7880108}
   m_LocalPosition: {x: 12.76, y: -6.62, z: 0}
   m_LocalScale: {x: 1, y: 5, z: 1}
   m_ConstrainProportionsScale: 0

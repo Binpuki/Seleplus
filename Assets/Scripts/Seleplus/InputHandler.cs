@@ -67,5 +67,31 @@ namespace Seleplus
 
             input.performed -= action;
         }
+
+        public void AddHoldEvent(string name, string[] keys, float speed, Action<InputAction.CallbackContext> action)
+        {
+            InputAction input = inputs.FirstOrDefault(x => x.name == name);
+            if (input == null)
+            {
+                input = new InputAction(name, InputActionType.Button);
+
+                if (keys != null)
+                    foreach (string key in keys)
+                        input.AddBinding(key, $"hold(duration={speed.ToString().Replace(",", ".")})");
+
+                inputs.Add(input);
+            }
+
+            input.performed += action;
+        }
+
+        public void RemoveHoldEvent(string name, Action<InputAction.CallbackContext> action)
+        {
+            InputAction input = inputs.FirstOrDefault(x => x.name == name);
+            if (input == null)
+                throw new Exception($"Input {name} does not exist! Can not remove hold event.");
+
+            input.performed -= action;
+        }
     }
 }
