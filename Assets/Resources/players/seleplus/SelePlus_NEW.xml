@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SelePlus_NEW.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SelePlus Idle0000" x="1" y="1" width="271" height="346" frameX="0" frameY="-1" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0001" x="1" y="1" width="271" height="346" frameX="0" frameY="-1" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0002" x="273" y="1" width="271" height="344" frameX="0" frameY="-3" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0003" x="273" y="1" width="271" height="344" frameX="0" frameY="-3" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0004" x="545" y="1" width="271" height="342" frameX="0" frameY="-5" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0005" x="545" y="1" width="271" height="342" frameX="0" frameY="-5" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0006" x="817" y="1" width="271" height="341" frameX="0" frameY="-6" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0007" x="817" y="1" width="271" height="341" frameX="0" frameY="-6" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0008" x="1089" y="1" width="271" height="345" frameX="0" frameY="-2" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0009" x="1089" y="1" width="271" height="345" frameX="0" frameY="-2" frameWidth="271" frameHeight="347"/>
+	<SubTexture name="SelePlus Idle0010" x="1361" y="1" width="271" height="347"/>
+	<SubTexture name="SelePlus Idle0011" x="1361" y="1" width="271" height="347"/>
+	<SubTexture name="SelePlus Jump0000" x="1633" y="1" width="287" height="296" frameX="-39" frameY="-41" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0001" x="1" y="349" width="297" height="422" frameX="-59" frameY="-31" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0002" x="1" y="349" width="297" height="422" frameX="-59" frameY="-31" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0003" x="299" y="349" width="312" height="421" frameX="-59" frameY="-27" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0004" x="299" y="349" width="312" height="421" frameX="-59" frameY="-27" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0005" x="612" y="349" width="300" height="354" frameX="-56" frameY="-24" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0006" x="612" y="349" width="300" height="354" frameX="-56" frameY="-24" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0007" x="913" y="349" width="273" height="331" frameX="-33" frameY="-31" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0008" x="913" y="349" width="273" height="331" frameX="-33" frameY="-31" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0009" x="1187" y="349" width="284" height="334" frameX="-20" frameY="-32" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0010" x="1187" y="349" width="284" height="334" frameX="-20" frameY="-32" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0011" x="1472" y="349" width="268" height="330" frameX="-12" frameY="-38" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0012" x="1472" y="349" width="268" height="330" frameX="-12" frameY="-38" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0013" x="1741" y="349" width="267" height="365" frameX="0" frameY="0" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0014" x="1741" y="349" width="267" height="365" frameX="0" frameY="0" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0015" x="1" y="772" width="269" height="312" frameX="-4" frameY="-38" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Jump0016" x="271" y="772" width="283" height="325" frameX="-32" frameY="-23" frameWidth="371" frameHeight="453"/>
+	<SubTexture name="SelePlus Run0000" x="555" y="772" width="324" height="322" frameX="0" frameY="0" frameWidth="335" frameHeight="346"/>
+	<SubTexture name="SelePlus Run0001" x="880" y="772" width="295" height="330" frameX="-19" frameY="-2" frameWidth="335" frameHeight="346"/>
+	<SubTexture name="SelePlus Run0002" x="1176" y="772" width="285" height="336" frameX="-18" frameY="-6" frameWidth="335" frameHeight="346"/>
+	<SubTexture name="SelePlus Run0003" x="1462" y="772" width="283" height="323" frameX="-13" frameY="-20" frameWidth="335" frameHeight="346"/>
+	<SubTexture name="SelePlus Run0004" x="1462" y="772" width="283" height="323" frameX="-13" frameY="-20" frameWidth="335" frameHeight="346"/>
+	<SubTexture name="SelePlus Run0005" x="1746" y="772" width="292" height="335" frameX="-23" frameY="-11" frameWidth="335" frameHeight="346"/>
+	<SubTexture name="SelePlus Run0006" x="1" y="1109" width="305" height="338" frameX="-30" frameY="-8" frameWidth="335" frameHeight="346"/>
+	<SubTexture name="SelePlusHit0000" x="307" y="1109" width="405" height="394"/>
+	<SubTexture name="SelePlusHit0001" x="307" y="1109" width="405" height="394"/>
+	<SubTexture name="SelePlusHit0002" x="713" y="1109" width="405" height="394"/>
+	<SubTexture name="SelePlusHit0003" x="713" y="1109" width="405" height="394"/>
+</TextureAtlas>
