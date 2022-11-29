@@ -16,10 +16,15 @@ namespace Seleplus.Objects.Weapons
 
         private Dictionary<string, bool> keysDown = new Dictionary<string, bool>();
 
+        [SerializeField] public bool isPlayer = false;
+
         protected virtual void Awake()
         {
-            ReloadKeybinds();
-            inputsEnabled = true;
+            if (isPlayer)
+            {
+                ReloadKeybinds();
+                inputsEnabled = true;
+            }
         }
 
         public void ReloadKeybinds()

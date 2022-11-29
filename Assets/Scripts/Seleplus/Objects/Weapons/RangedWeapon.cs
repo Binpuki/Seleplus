@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Seleplus.Scripts;
+using Seleplus.Objects.Player;
 
 namespace Seleplus.Objects.Weapons
 {
@@ -34,7 +35,9 @@ namespace Seleplus.Objects.Weapons
             base.Update();
 
             // I KNOW THIS IS BAD BUT IT WORKS FOR NOW, I WILL REWORK LATER ;-;
-            Vector2 mouseCalc = new Vector2(mouseTracker.worldPosition.x - gunBarrel.position.x, mouseTracker.worldPosition.y - gunBarrel.position.y);
+            Vector2 mouseCalc = 
+                isPlayer ? new Vector2(mouseTracker.worldPosition.x - gunBarrel.position.x, mouseTracker.worldPosition.y - gunBarrel.position.y) 
+                : new Vector2(FindObjectOfType<Player.Player>().transform.position.x - gunBarrel.position.x, FindObjectOfType<Player.Player>().transform.position.y - gunBarrel.position.y);
 
             angle = (Mathf.Atan2(mouseCalc.y, mouseCalc.x));
             angleDegrees = angle * (180f / Mathf.PI);

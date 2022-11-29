@@ -9,6 +9,8 @@ namespace Seleplus.Objects.Player
     public class Player : InputHandler
     {
         bool isGrounded = false;
+        public bool cannotBeHit = false;
+        public float health = 1f;
 
         [Header("Utilities")]
 
@@ -59,9 +61,18 @@ namespace Seleplus.Objects.Player
             }
         }
 
+        
+
         void Update()
         {
             isGrounded = Physics2D.OverlapCircle(transform.position, 0.3f, groundLayer);
+
+            if (cannotBeHit && isGrounded)
+            {
+                cannotBeHit = false;
+                spriteAnimator.Play("idle", 0);
+                spriteAnimator.speed = 1f;
+            }
 
             if (keysDown["Left"] || keysDown["Right"])
             {
@@ -110,6 +121,13 @@ namespace Seleplus.Objects.Player
                 else
                     rb.velocity = new Vector3(0f, rb.velocity.y);
             }
+        }
+
+        public void Damage(float damage)
+        {
+            cannotBeHit = true;
+            rb.velocity = new Vector2(5f * (rb.velocity.x < 0f ? 1f : -1f), 7f);
+            health -= damage;
         }
     }
 }

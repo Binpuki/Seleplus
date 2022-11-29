@@ -11,6 +11,8 @@ namespace Seleplus.Objects.Weapons
     {
         public float speed;
         public List<LayerMask> layerCollisions = new List<LayerMask>();
+        public bool isPlayerBullet = false;
+        public LayerMask layerToHit;
 
         [SerializeField] private float hypotenuse;
         [SerializeField] private Vector2 direction;
@@ -26,7 +28,11 @@ namespace Seleplus.Objects.Weapons
             direction = new Vector2(center.x / (hypotenuse / speed), center.y / (hypotenuse / speed));
         }
 
-        //public void 
+        private void Update()
+        {
+            if (!isPlayerBullet && Physics2D.OverlapCircle(transform.position, 0.3f, layerToHit))
+                FindObjectOfType<Player.Player>().Damage(0.3f);
+        }
 
         private void FixedUpdate()
         {

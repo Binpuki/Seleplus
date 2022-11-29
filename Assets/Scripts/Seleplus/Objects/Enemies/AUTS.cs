@@ -8,19 +8,17 @@ using Seleplus.Objects.Player;
 
 namespace Seleplus.Objects.Enemies
 {
-    public class Dargoon : MonoBehaviour
+    public class AUTS : MonoBehaviour
     {
         [Header("Movement")]
-        public float increaseSpeed = 0.4f;
-        public float decreaseSpeed = 0.05f;
-        public float maxSpeed = 10f;
-        public float jumpSpeed = 2.5f;
+        public float speed = 2f;
 
         [Header("References")]
         [SerializeField] private Animator spriteAnimator;
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Rigidbody2D rb;
         [SerializeField] private LayerMask groundLayer;
+        [SerializeField] private Transform gunBarrel;
         [SerializeField] private LayerMask playerLayer;
 
         public Player.Player player;
@@ -33,8 +31,9 @@ namespace Seleplus.Objects.Enemies
         private void Update()
         {
             spriteRenderer.flipX = transform.position.x > player.transform.position.x;
+            gunBarrel.localPosition = new Vector3(0.53f * (transform.position.x > player.transform.position.x ? -1 : 1), gunBarrel.localPosition.y);
 
-            if (Physics2D.OverlapCircle(transform.position, 1f, playerLayer))
+            if (Physics2D.OverlapCircle(transform.position, 0.3f, playerLayer))
                 FindObjectOfType<Player.Player>().Damage(0.3f);
         }
 
@@ -46,23 +45,11 @@ namespace Seleplus.Objects.Enemies
             if (playerOnLeft || playerOnRight)
             {
                 int horizMultiplier = playerOnRight ? -1 : 1;
-                float dSpeed = increaseSpeed * horizMultiplier;
-
-                if (rb.velocity.x + dSpeed >= -maxSpeed && rb.velocity.x + dSpeed <= maxSpeed)
-                    rb.velocity = new Vector3(rb.velocity.x + dSpeed, rb.velocity.y);
-                else
-                    rb.velocity = new Vector3(maxSpeed * horizMultiplier, rb.velocity.y);
+                rb.velocity = new Vector3(speed * horizMultiplier, rb.velocity.y);
             }
             else
             {
-                bool goingBackwards = rb.velocity.x < 0f;
-                int horizMultiplier = goingBackwards ? 1 : -1;
-                float dSpeed = decreaseSpeed * horizMultiplier;
-
-                if ((rb.velocity.x + dSpeed < 0f && goingBackwards) || (rb.velocity.x + dSpeed > 0f && !goingBackwards))
-                    rb.velocity = new Vector3(rb.velocity.x + dSpeed, rb.velocity.y);
-                else
-                    rb.velocity = new Vector3(0f, rb.velocity.y);
+                rb.velocity = new Vector3(0, rb.velocity.y);
             }
         }
     }

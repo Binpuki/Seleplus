@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Dargoon.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Dargoon0000" x="1" y="1" width="221" height="206" frameX="-29" frameY="0" frameWidth="276" frameHeight="249"/>
+	<SubTexture name="Dargoon0001" x="223" y="1" width="219" height="200" frameX="-32" frameY="-13" frameWidth="276" frameHeight="249"/>
+	<SubTexture name="Dargoon0002" x="443" y="1" width="220" height="200" frameX="-32" frameY="-34" frameWidth="276" frameHeight="249"/>
+	<SubTexture name="Dargoon0003" x="443" y="1" width="220" height="200" frameX="-32" frameY="-34" frameWidth="276" frameHeight="249"/>
+	<SubTexture name="Dargoon0004" x="664" y="1" width="276" height="123" frameX="0" frameY="-125" frameWidth="276" frameHeight="249"/>
+	<SubTexture name="Dargoon0005" x="1" y="208" width="235" height="150" frameX="-21" frameY="-99" frameWidth="276" frameHeight="249"/>
+	<SubTexture name="Dargoon0006" x="237" y="208" width="220" height="220" frameX="-14" frameY="-17" frameWidth="276" frameHeight="249"/>
+	<SubTexture name="Dargoon0007" x="237" y="208" width="220" height="220" frameX="-14" frameY="-17" frameWidth="276" frameHeight="249"/>
+	<SubTexture name="Dargoon0008" x="237" y="208" width="220" height="220" frameX="-14" frameY="-17" frameWidth="276" frameHeight="249"/>
+</TextureAtlas>

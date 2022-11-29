@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="AUTS.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="AUTS Body0000" x="1" y="1" width="270" height="287" frameX="-6" frameY="-2" frameWidth="276" frameHeight="289"/>
+	<SubTexture name="AUTS Body0001" x="272" y="1" width="276" height="289"/>
+</TextureAtlas>
